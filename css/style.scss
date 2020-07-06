@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    margin: 5% 10%;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6vh;
+    // justify-content: space-around;
+
+    h1{
+        white-space: nowrap;
+        font-size: 3.5rem;
+    }
+
+    h3{
+        font-size: 2.3rem;
+    }
+
+    h5{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #who{
+        margin-left: 28%;
+    }
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, auto));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    row-gap: 2%;
+    column-gap: 5%;
+    margin-bottom: 10%;
+
+
+}
+
+.card{
+
+    div{
+        display: flex;
+        flex-direction: row;
+
+        img{
+            margin-right: 2.5%;
+        }
+
+        p{
+            writing-mode: vertical-rl;
+            white-space: nowrap;
+            display: block;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .name{
+        margin-top: 3%;
+        font-size: 1.5rem;
+        // font-weight: 600;
+    }
+}
+
+.card-b{
+    margin-bottom: 30%;
+}
+
+.card-t{
+    margin-top: 30%;
+}
+
+footer{
+    text-align: center;
+}

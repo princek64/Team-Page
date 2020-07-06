@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 5% 10%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 6vh;
+}
+
+header h1 {
+  white-space: nowrap;
+  font-size: 3.5rem;
+}
+
+header h3 {
+  font-size: 2.3rem;
+}
+
+header h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+header #who {
+  margin-left: 28%;
+}
+
+.main-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50px, auto))[3];
+      grid-template-columns: repeat(3, minmax(50px, auto));
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 50px;
+  row-gap: 2%;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+  margin-bottom: 10%;
+}
+
+.card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card div img {
+  margin-right: 2.5%;
+}
+
+.card div p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  white-space: nowrap;
+  display: block;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.card .name {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+.card-b {
+  margin-bottom: 30%;
+}
+
+.card-t {
+  margin-top: 30%;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
