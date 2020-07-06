@@ -12,29 +12,28 @@ body{
     margin: 5% 10%;
 }
 
-
 header{
     display: flex;
     flex-direction: row;
-    margin-bottom: 6vh;
-    // justify-content: space-around;
+    margin-bottom: 9vh;
 
     h1{
         white-space: nowrap;
-        font-size: 3.5rem;
+        font-size: 3.5vmax;
     }
 
     h3{
-        font-size: 2.3rem;
+        font-size: 2.3vmax;
     }
 
     h5{
-        font-size: 1.5rem;
+        font-size: 1.5vmax;
         font-weight: 500;
+        margin-top: 3.5%;
     }
 
     #who{
-        margin-left: 28%;
+        margin-left: 21%;
     }
 }
 
@@ -46,8 +45,6 @@ header{
     row-gap: 2%;
     column-gap: 5%;
     margin-bottom: 10%;
-
-
 }
 
 .card{
@@ -58,13 +55,14 @@ header{
 
         img{
             margin-right: 2.5%;
+            width: 85%;
         }
 
         p{
             writing-mode: vertical-rl;
             white-space: nowrap;
             display: block;
-            font-size: 1.3rem;
+            font-size: 1.3vmax;
             text-transform: uppercase;
         }
 
@@ -72,8 +70,7 @@ header{
 
     .name{
         margin-top: 3%;
-        font-size: 1.5rem;
-        // font-weight: 600;
+        font-size: 1.5vmax;
     }
 }
 
@@ -87,4 +84,35 @@ header{
 
 footer{
     text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        display: block;
+
+        #who {
+            margin-top: 10%;
+            margin-left: 0;
+        }
+    }
+
+    .main-section{
+        grid-template-columns: repeat(2, minmax(50px, auto));
+    }
+
+    footer{
+        margin: 15% 0 3% 0;
+        font-size: 0.5rem;;
+    }
+
+    .mobile-t{
+        margin-bottom: 0;
+        margin-top: 25%;
+    }
+
+    .mobile-b{
+        margin-top: 0;
+        margin-bottom: 25%;
+    }
 }
